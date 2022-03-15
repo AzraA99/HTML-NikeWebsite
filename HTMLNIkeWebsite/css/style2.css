@@ -1,0 +1,164 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Muli', sans-serif;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #b3001b; 
+  }
+
+  .heading-contact{
+    text-align:center;
+  }
+
+  .slide img {
+    height: 89vh;
+    width: 100%;
+    object-fit: cover;    
+    display: block;
+  }
+
+  .nav {
+    grid-area: navigation;
+    background-color: #ccad8f;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .nav ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  .nav li {
+    display: inline;
+  }
+
+  .nav a {
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+  }
+
+  .nav li a:hover {
+    background-color:black;
+    color: #fff;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+    'navigation navigation navigation navigation' 
+      'header header header header'
+      'naslov naslov naslov naslov'
+      'middle middle middle middle' 
+      'footer footer footer footer';
+    grid-gap: 10px;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 3fr 3fr 3fr 2fr;
+  } 
+  
+  #naslov {
+    text-align: center;
+    grid-area:naslov;
+    font-style: italic;
+    background-color:#b2001b;
+    color:#fff;
+  }
+
+  .middle {
+    grid-area: middle;
+    padding: 10px;
+    background-color:#fff;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #7ea3cc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header'
+        'naslov naslov naslov naslov'
+        'navigation navigation navigation navigation' 
+        'middle middle middle middle'
+        'footer footer footer footer';
+    }
+    .header {
+      display:none;
+    }
+    #naslov {
+      margin-top:-10px;
+    }
+
+  
+    .nav ul {
+      padding: 0;
+      list-style-type: none;
+    }
+    
+    .nav li {
+      padding: 10px;
+      display: block;
+    }
+  
+    .nav a {
+      padding: 0;
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+form {
+  max-width: 500px; 
+  margin: 25px auto 25px auto;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type=submit] {
+  background-color: #444;
+  color: white;
+  padding: 10px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=submit]:hover {
+  background-color: #ccad8f;
+  color: black;
+}
+
+
+.mapa {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 50%;
+}
+
+.mapa iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}

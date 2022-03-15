@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Kontakt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style2.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+  <!--Slajder-->
+  <div class="grid-container">
+    <div class="header">
+
+      <div class="slide">
+        <img src="images/slideshow/slide1.jpg">
+      </div>
+
+      <div class="slide">
+        <img src="images/slideshow/slide2.jpg">
+      </div>
+
+      <div class="slide">
+        <img src="images/slideshow/slide3.jpg">
+      </div>
+
+    </div>
+<!--Kraj slajdera-->
+
+<!--Nasvigacija-->
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="location.html">Location</a></li>
+      </ul>
+    </div>
+<!--kraj navigacije-->
+
+    <div id="naslov">
+      <h1>NIKE</h1>
+    </div>
+
+    <!--Forma-->
+    <div class="middle">
+      <h1 class="heading-contact">Contact Us</h1>
+      <form name="forma" onsubmit="return validacijaForme()" >
+        Ime:<br>
+        <input type="text" name="name"><br>
+        Godište:<br>
+        <input type="text" name="number"><br>
+        Email:<br>
+        <input type="email" name="email"><br>
+        Poruka:<br>
+        <input type="text" name="message"><br>
+        
+        <input type="submit" value="Pošalji">
+        
+      </form>
+    </div>
+<!--Kraj forme-->
+ 
+<!--Footer-->
+<div class="footer">
+      <p>Copyright © 2021 Univerzitet Sinergija, Bijeljina</p>
+      </span>
+    </div>
+  </div>
+<!--kraj Footer-->
+
+  <script type="text/javascript" src="js/slider.js"></script>
+
+  <script type="text/javascript" src="js/contact.js"></script>
+
+</body>
+
+</html>

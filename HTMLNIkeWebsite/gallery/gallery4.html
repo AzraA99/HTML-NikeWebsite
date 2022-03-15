@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Galerija</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/gallery.css">
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../location.html">Location</a></li>
+        </ul>
+      </div>
+<br>
+      <!--Galerija-->
+
+      <div class="container-gallery">
+        
+        
+        <div class="row">
+          <div class="column">
+            <img src="../galerija/g4nike.jpg"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="../galerija/g4nike2.jpg"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="../galerija/g4ike3.jpg"  onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="../galerija/g4nike4.jpg"  onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+          
+        </div>
+        <div class="clear"></div>
+        
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+        
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="../galerija/g4nike.jpg">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="../galerija/g4nike2.jpg">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="../galerija/g4ike3.jpg">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="../galerija/g4nike4.jpg">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+        
+        
+            <div class="column">
+              <img class="demo cursor" src="../galerija/g4nike.jpg"  onclick="currentSlide(1)" alt="image">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../galerija/g4nike2.jpg" onclick="currentSlide(2)" alt="image">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../galerija/g4ike3.jpg" onclick="currentSlide(3)" alt="image">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../galerija/g4nike4.jpg" onclick="currentSlide(4)" alt="image">
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="text-gallery">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+             </p>
+        </div>
+
+        <!--Footer-->
+
+        <div class="footer">
+          <p>Copyright © 2021 Univerzitet Sinergija, Bijeljina</p>
+          </span>
+        </div>
+      </div>
+        
+      <script src="../js/gallery.js"> </script>
+</body>
+
+</html>
